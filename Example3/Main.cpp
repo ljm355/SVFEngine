@@ -264,13 +264,14 @@ void addParks(Map* map)
 	map->addModelLayer(new ModelLayer("parks", fgm_opt));
 }
 
-
-//for compiling and using osgEarth, refer to:
-//http://docs.osgearth.org/en/latest/startup.html
-//http://docs.osgearth.org/en/latest/
-
-int
-main(int argc, char** argv)
+//readme:
+//(1) Toggle Full Screen : F key
+//(2) Reset camera : Control key
+//(3) Rotate : Mouse left button + drag
+//(4) Zoom : Mouse right button + drag or Mouse scroll
+//(5) Exit : Esc key
+//(6) Calculate SVF at a position : mouse click
+int main(int argc, char** argv)
 {
 	osg::ArgumentParser arguments(&argc, argv);
 	osgViewer::Viewer* viewer = new osgViewer::Viewer(arguments);

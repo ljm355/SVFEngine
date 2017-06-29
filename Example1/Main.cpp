@@ -6,6 +6,13 @@
 #include "SVFComputeTools.h"
 #include "osg/ShapeDrawable"
 
+//readme:
+//(1) Toggle Full Screen: F key
+//(2) Reset camera: Control key
+//(3) Rotate: Mouse left button + drag
+//(4) Zoom: Mouse right button + drag or Mouse scroll
+//(5) Exit: Esc key
+//(6) Calculate SVF at a position: mouse click
 int main(int argc, char **argv)
 {
 
@@ -15,9 +22,9 @@ int main(int argc, char **argv)
 	 viewer->setUpViewAcrossAllScreens();
 	 osg::ref_ptr<osg::Group> root = new osg::Group;
 	 //load a 3D city model from file
-	 //osg::ref_ptr<osg::Node> city = osgDB::readNodeFile(argv[1]);
-	 //osg::ref_ptr<osg::Node> city = osgDB::readNodeFile("./data/models/CAD/CAD.osg");
-	 osg::ref_ptr<osg::Node> city = osgDB::readNodeFile("./data/models/OAP3D/OAP3D.osgb");
+	 //osg::ref_ptr<osg::Node> city = osgDB::readNodeFile(argv[1]); //create a model from argument
+	 //osg::ref_ptr<osg::Node> city = osgDB::readNodeFile("./data/models/CAD/CAD.osg"); //use CAD model
+	 osg::ref_ptr<osg::Node> city = osgDB::readNodeFile("./data/models/OAP3D/OAP3D.osgb"); //use OAP3D
 	 root->addChild(city.get());
 
 	 osg::ref_ptr<osgGA::CameraManipulator> manip = new osgGA::TrackballManipulator;

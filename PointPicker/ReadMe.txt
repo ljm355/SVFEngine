@@ -1,40 +1,14 @@
-========================================================================
-    CONSOLE APPLICATION : GridPolygonIntersection Project Overview
-========================================================================
+This is a tool for collecting points from a 3D city model (for example data/models/OAP3D/OAP3D.osgb or data/models/CAD/CAD.osg)
 
-AppWizard has created this GridPolygonIntersection application for you.
+arguments: 
+(1) path of a 3D model file
+(2) path of a Shapefile to create or update
+(3) base height of groud plane to create (optional)
 
-This file contains a summary of what you will find in each of the files that
-make up your GridPolygonIntersection application.
+how to use the tool:
+(1) mouse right click to add a point
+(2) press key DELETE to delete the last point
+(3) press key B to update the Shapefile (remember to do this regularly, since results will not be saved in case of abnormal termination)
 
-
-GridPolygonIntersection.vcxproj
-    This is the main project file for VC++ projects generated using an Application Wizard.
-    It contains information about the version of Visual C++ that generated the file, and
-    information about the platforms, configurations, and project features selected with the
-    Application Wizard.
-
-GridPolygonIntersection.vcxproj.filters
-    This is the filters file for VC++ projects generated using an Application Wizard. 
-    It contains information about the association between the files in your project 
-    and the filters. This association is used in the IDE to show grouping of files with
-    similar extensions under a specific node (for e.g. ".cpp" files are associated with the
-    "Source Files" filter).
-
-GridPolygonIntersection.cpp
-    This is the main application source file.
-
-/////////////////////////////////////////////////////////////////////////////
-Other standard files:
-
-StdAfx.h, StdAfx.cpp
-    These files are used to build a precompiled header (PCH) file
-    named GridPolygonIntersection.pch and a precompiled types file named StdAfx.obj.
-
-/////////////////////////////////////////////////////////////////////////////
-Other notes:
-
-AppWizard uses "TODO:" comments to indicate parts of the source code you
-should add to or customize.
-
-/////////////////////////////////////////////////////////////////////////////
+how to view the results:
+(1) change the variables (3D model file and Shapefile) in Example2 and recomplie  

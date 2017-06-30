@@ -9,7 +9,7 @@ A common approach to derive the sky view factor (SVF) in an urban environment is
 
 ## 2.Environment
  * (1) Operating System: deveoped and tested under Windows 7 64-bit
- * (2) IDE: Visual Studio 2015. Make sure that x64 mode is on and Configuration Properties -> Working Directory be set to $(SolutionDir)\bin.
+ * (2) IDE: Visual Studio 2015 C++. Make sure that x64 mode is on and Configuration Properties -> Working Directory be set to $(SolutionDir)\bin.
  * (3) Precompiled dependencies: OpenSceneGraph 3.2.0 (http://www.openscenegraph.org/), osgEarth 2.5 (http://osgearth.org/) and GDAL 2.1.2 (http://www.gdal.org/). They may also be compiled from source or acquired directly from OSGeo4W (https://trac.osgeo.org/osgeo4w/).
 
 ## 3.Test data

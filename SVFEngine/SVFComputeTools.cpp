@@ -735,7 +735,7 @@ bool SkyViewFactorEventHandler::handle(const osgGA::GUIEventAdapter & ea, osgGA:
 	if (ea.getEventType() == osgGA::GUIEventAdapter::DOUBLECLICK) {
 	}
 
-	if (ea.getEventType() == osgGA::GUIEventAdapter::PUSH)
+	if ((ea.getModKeyMask() & ea.MODKEY_CTRL) != 0 && ea.getEventType() == osgGA::GUIEventAdapter::PUSH)
 	{
 		osg::ref_ptr<osgUtil::LineSegmentIntersector> ray = new osgUtil::LineSegmentIntersector(osgUtil::Intersector::PROJECTION, ea.getXnormalized(), ea.getYnormalized());
 		osgUtil::IntersectionVisitor visitor(ray);

@@ -664,7 +664,7 @@ void SkyViewFactorEventHandler::computeMouseIntersection(osgUtil::LineSegmentInt
 	printfVec3(ray->getFirstIntersection().getWorldIntersectPoint());
 	osg::Vec3d observer = ray->getFirstIntersection().getWorldIntersectPoint();
 	osg::Vec3d observerNormal = ray->getFirstIntersection().getWorldIntersectNormal();
-	observer = observer + observerNormal * 0.5;
+	observer = observer + observerNormal * 2.5; //distance of camera from the surface
 	osg::Vec3d observerup = osg::Vec3(0, 0, 1);
 	_pointRenderer->setPoint(observer);
 

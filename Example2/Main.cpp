@@ -115,7 +115,7 @@ int main(int argc, char **argv)
 
 		osg::Vec3d observer = pos;
 		osg::Vec3d observerNormal = normal;
-		observer = observer + observerNormal * 5;//distance of camera from the surface
+		observer = observer + observerNormal * 2.5;//distance of camera from the surface
 		for (size_t i = 0; i < cubemapCameras->getNumChildren(); i++)
 		{
 			CameraBuffer* cameraBuffer = (CameraBuffer*)cubemapCameras->getChild(i);

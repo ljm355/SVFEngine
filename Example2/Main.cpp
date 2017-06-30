@@ -84,7 +84,7 @@ int main(int argc, char **argv)
 	std::vector<osg::Vec3d> points;
 
 	GDALAllRegister();
-	//read in a point set from a shapefile. The points were interactively collected in the 3D city model using the PointPicker tool.
+	//read in a point set from a shapefile. These points were interactively collected in the 3D city model using the PointPicker tool.
 	ShapeFile shp("./data/street_points.shp");
 	OGRFeature *poFeature;
 	shp.poLayer->ResetReading();
@@ -115,9 +115,7 @@ int main(int argc, char **argv)
 
 		osg::Vec3d observer = pos;
 		osg::Vec3d observerNormal = normal;
-		observer = observer + observerNormal * 5;
-		/*	g_pManip->setHomePosition(eye, center, up);
-		g_pManip->home(0);*/
+		observer = observer + observerNormal * 5;//distance of camera from the surface
 		for (size_t i = 0; i < cubemapCameras->getNumChildren(); i++)
 		{
 			CameraBuffer* cameraBuffer = (CameraBuffer*)cubemapCameras->getChild(i);
